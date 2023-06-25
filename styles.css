@@ -9,6 +9,7 @@ Color Palette dark to light:
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 .container{
     display: grid;
@@ -75,7 +76,7 @@ li{
 }
 .cardsInnerContainer{
     display: grid;
-    grid-template-rows: repeat(3, minmax(180px, 250px));
+    grid-template-rows: repeat(3, minmax(150px, 220px));
     grid-template-columns: auto auto;
     gap: 15px;
     margin: 15px;
@@ -90,10 +91,15 @@ li{
     color: #001C30;
     border-radius: 6px;
     box-shadow: 0px 2px 3px #176B87;
+    padding: 20px;;
 }
 h5{
     font-size: 1.1rem;
     font-weight: bold;
+    margin-bottom: 5px;
+}
+.card > p{
+    font-size: .8rem;
 }
 #cardsHeader{
     color: white;
@@ -102,6 +108,7 @@ h5{
 }
 .announcements{
     color: white;
+    margin-bottom: 15px;
 }
 .announcementsContainer{
     display: flex;
@@ -118,7 +125,6 @@ h5{
     box-sizing: border-box;
     padding: 20px;
     max-width: 250px;
-    margin-top: 15px;
     color: #001C30;
 }
 .sideCard > p {
@@ -169,4 +175,13 @@ hr{
     border: none;
     font-weight: bold;
     color: #001C30;
+}
+#trending{
+    margin-top: 15px;
+    color: white;
+}
+.trendsCard{
+    display: flex;
+    align-self: center;
+    margin-bottom: 5px;
 }
